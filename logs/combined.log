@@ -1,0 +1,217 @@
+{"level":"info","message":"Server running on port 3000","timestamp":"2025-09-19 14:27:15"}
+{"code":"ER_ACCESS_DENIED_ERROR","errno":1045,"level":"error","message":"Access denied for user 'root'@'localhost' (using password: YES)","sqlMessage":"Access denied for user 'root'@'localhost' (using password: YES)","sqlState":"28000","stack":"Error: Access denied for user 'root'@'localhost' (using password: YES)\n    at PromisePool.execute (C:\\Users\\Endri Azizi\\progetti-dev\\pizzeria-backend\\node_modules\\mysql2\\lib\\promise\\pool.js:54:22)\n    at Object.findByTable (C:\\Users\\Endri Azizi\\progetti-dev\\pizzeria-backend\\models\\order.js:12:62)\n    at Object.getOrdersByTable (C:\\Users\\Endri Azizi\\progetti-dev\\pizzeria-backend\\services\\orderService.js:5:41)\n    at getOrdersByTable (C:\\Users\\Endri Azizi\\progetti-dev\\pizzeria-backend\\controllers\\orderController.js:16:41)\n    at Layer.handleRequest (C:\\Users\\Endri Azizi\\progetti-dev\\pizzeria-backend\\node_modules\\router\\lib\\layer.js:152:17)\n    at next (C:\\Users\\Endri Azizi\\progetti-dev\\pizzeria-backend\\node_modules\\router\\lib\\route.js:157:13)\n    at Route.dispatch (C:\\Users\\Endri Azizi\\progetti-dev\\pizzeria-backend\\node_modules\\router\\lib\\route.js:117:3)\n    at handle (C:\\Users\\Endri Azizi\\progetti-dev\\pizzeria-backend\\node_modules\\router\\index.js:435:11)\n    at Layer.handleRequest (C:\\Users\\Endri Azizi\\progetti-dev\\pizzeria-backend\\node_modules\\router\\lib\\layer.js:152:17)\n    at C:\\Users\\Endri Azizi\\progetti-dev\\pizzeria-backend\\node_modules\\router\\index.js:295:15","timestamp":"2025-09-19 14:33:33"}
+{"level":"info","message":"::1 - - [19/Sep/2025:12:33:33 +0000] \"GET /api/v1/orders/table/1 HTTP/1.1\" 500 77 \"-\" \"PostmanRuntime/7.46.1\"","timestamp":"2025-09-19 14:33:33"}
+{"code":"ER_ACCESS_DENIED_ERROR","errno":1045,"level":"error","message":"Access denied for user 'root'@'localhost' (using password: YES)","sqlMessage":"Access denied for user 'root'@'localhost' (using password: YES)","sqlState":"28000","stack":"Error: Access denied for user 'root'@'localhost' (using password: YES)\n    at PromisePool.execute (C:\\Users\\Endri Azizi\\progetti-dev\\pizzeria-backend\\node_modules\\mysql2\\lib\\promise\\pool.js:54:22)\n    at Object.findByTable (C:\\Users\\Endri Azizi\\progetti-dev\\pizzeria-backend\\models\\order.js:12:62)\n    at Object.getOrdersByTable (C:\\Users\\Endri Azizi\\progetti-dev\\pizzeria-backend\\services\\orderService.js:5:41)\n    at getOrdersByTable (C:\\Users\\Endri Azizi\\progetti-dev\\pizzeria-backend\\controllers\\orderController.js:16:41)\n    at Layer.handleRequest (C:\\Users\\Endri Azizi\\progetti-dev\\pizzeria-backend\\node_modules\\router\\lib\\layer.js:152:17)\n    at next (C:\\Users\\Endri Azizi\\progetti-dev\\pizzeria-backend\\node_modules\\router\\lib\\route.js:157:13)\n    at Route.dispatch (C:\\Users\\Endri Azizi\\progetti-dev\\pizzeria-backend\\node_modules\\router\\lib\\route.js:117:3)\n    at handle (C:\\Users\\Endri Azizi\\progetti-dev\\pizzeria-backend\\node_modules\\router\\index.js:435:11)\n    at Layer.handleRequest (C:\\Users\\Endri Azizi\\progetti-dev\\pizzeria-backend\\node_modules\\router\\lib\\layer.js:152:17)\n    at C:\\Users\\Endri Azizi\\progetti-dev\\pizzeria-backend\\node_modules\\router\\index.js:295:15","timestamp":"2025-09-19 14:33:36"}
+{"level":"info","message":"::1 - - [19/Sep/2025:12:33:36 +0000] \"GET /api/v1/orders/table/1 HTTP/1.1\" 500 77 \"-\" \"PostmanRuntime/7.46.1\"","timestamp":"2025-09-19 14:33:36"}
+{"code":"ER_ACCESS_DENIED_ERROR","errno":1045,"level":"error","message":"Access denied for user 'root'@'localhost' (using password: YES)","sqlMessage":"Access denied for user 'root'@'localhost' (using password: YES)","sqlState":"28000","stack":"Error: Access denied for user 'root'@'localhost' (using password: YES)\n    at PromisePool.execute (C:\\Users\\Endri Azizi\\progetti-dev\\pizzeria-backend\\node_modules\\mysql2\\lib\\promise\\pool.js:54:22)\n    at Object.findByEmail (C:\\Users\\Endri Azizi\\progetti-dev\\pizzeria-backend\\models\\user.js:5:59)\n    at Object.login (C:\\Users\\Endri Azizi\\progetti-dev\\pizzeria-backend\\services\\authService.js:10:29)\n    at login (C:\\Users\\Endri Azizi\\progetti-dev\\pizzeria-backend\\controllers\\authController.js:16:39)\n    at Layer.handleRequest (C:\\Users\\Endri Azizi\\progetti-dev\\pizzeria-backend\\node_modules\\router\\lib\\layer.js:152:17)\n    at next (C:\\Users\\Endri Azizi\\progetti-dev\\pizzeria-backend\\node_modules\\router\\lib\\route.js:157:13)\n    at Route.dispatch (C:\\Users\\Endri Azizi\\progetti-dev\\pizzeria-backend\\node_modules\\router\\lib\\route.js:117:3)\n    at handle (C:\\Users\\Endri Azizi\\progetti-dev\\pizzeria-backend\\node_modules\\router\\index.js:435:11)\n    at Layer.handleRequest (C:\\Users\\Endri Azizi\\progetti-dev\\pizzeria-backend\\node_modules\\router\\lib\\layer.js:152:17)\n    at C:\\Users\\Endri Azizi\\progetti-dev\\pizzeria-backend\\node_modules\\router\\index.js:295:15","timestamp":"2025-09-19 14:36:24"}
+{"level":"info","message":"::1 - - [19/Sep/2025:12:36:24 +0000] \"POST /api/v1/auth/login HTTP/1.1\" 500 77 \"-\" \"PostmanRuntime/7.46.1\"","timestamp":"2025-09-19 14:36:24"}
+{"code":"ER_ACCESS_DENIED_ERROR","errno":1045,"level":"error","message":"Access denied for user 'root'@'localhost' (using password: YES)","sqlMessage":"Access denied for user 'root'@'localhost' (using password: YES)","sqlState":"28000","stack":"Error: Access denied for user 'root'@'localhost' (using password: YES)\n    at PromisePool.execute (C:\\Users\\Endri Azizi\\progetti-dev\\pizzeria-backend\\node_modules\\mysql2\\lib\\promise\\pool.js:54:22)\n    at Object.findByEmail (C:\\Users\\Endri Azizi\\progetti-dev\\pizzeria-backend\\models\\user.js:5:59)\n    at Object.login (C:\\Users\\Endri Azizi\\progetti-dev\\pizzeria-backend\\services\\authService.js:10:29)\n    at login (C:\\Users\\Endri Azizi\\progetti-dev\\pizzeria-backend\\controllers\\authController.js:16:39)\n    at Layer.handleRequest (C:\\Users\\Endri Azizi\\progetti-dev\\pizzeria-backend\\node_modules\\router\\lib\\layer.js:152:17)\n    at next (C:\\Users\\Endri Azizi\\progetti-dev\\pizzeria-backend\\node_modules\\router\\lib\\route.js:157:13)\n    at Route.dispatch (C:\\Users\\Endri Azizi\\progetti-dev\\pizzeria-backend\\node_modules\\router\\lib\\route.js:117:3)\n    at handle (C:\\Users\\Endri Azizi\\progetti-dev\\pizzeria-backend\\node_modules\\router\\index.js:435:11)\n    at Layer.handleRequest (C:\\Users\\Endri Azizi\\progetti-dev\\pizzeria-backend\\node_modules\\router\\lib\\layer.js:152:17)\n    at C:\\Users\\Endri Azizi\\progetti-dev\\pizzeria-backend\\node_modules\\router\\index.js:295:15","timestamp":"2025-09-19 14:36:34"}
+{"level":"info","message":"::1 - - [19/Sep/2025:12:36:34 +0000] \"POST /api/v1/auth/login HTTP/1.1\" 500 77 \"-\" \"PostmanRuntime/7.46.1\"","timestamp":"2025-09-19 14:36:34"}
+{"code":"ER_ACCESS_DENIED_ERROR","errno":1045,"level":"error","message":"Access denied for user 'root'@'localhost' (using password: YES)","sqlMessage":"Access denied for user 'root'@'localhost' (using password: YES)","sqlState":"28000","stack":"Error: Access denied for user 'root'@'localhost' (using password: YES)\n    at PromisePool.execute (C:\\Users\\Endri Azizi\\progetti-dev\\pizzeria-backend\\node_modules\\mysql2\\lib\\promise\\pool.js:54:22)\n    at Object.create (C:\\Users\\Endri Azizi\\progetti-dev\\pizzeria-backend\\models\\user.js:4:108)\n    at async register (C:\\Users\\Endri Azizi\\progetti-dev\\pizzeria-backend\\controllers\\authController.js:7:20)","timestamp":"2025-09-19 14:39:35"}
+{"level":"info","message":"::1 - - [19/Sep/2025:12:39:35 +0000] \"POST /api/v1/auth/register HTTP/1.1\" 500 77 \"-\" \"PostmanRuntime/7.46.1\"","timestamp":"2025-09-19 14:39:35"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2025-09-19 14:43:50"}
+{"code":"ER_BAD_FIELD_ERROR","errno":1054,"level":"error","message":"Unknown column 'role_id' in 'field list'","sql":"INSERT INTO users (name, email, password, role_id) VALUES (?, ?, ?, ?)","sqlMessage":"Unknown column 'role_id' in 'field list'","sqlState":"42S22","stack":"Error: Unknown column 'role_id' in 'field list'\n    at PromisePool.execute (C:\\Users\\Endri Azizi\\progetti-dev\\pizzeria-backend\\node_modules\\mysql2\\lib\\promise\\pool.js:54:22)\n    at Object.create (C:\\Users\\Endri Azizi\\progetti-dev\\pizzeria-backend\\models\\user.js:4:108)\n    at async register (C:\\Users\\Endri Azizi\\progetti-dev\\pizzeria-backend\\controllers\\authController.js:7:20)","timestamp":"2025-09-19 14:43:54"}
+{"level":"info","message":"::1 - - [19/Sep/2025:12:43:55 +0000] \"POST /api/v1/auth/register HTTP/1.1\" 500 54 \"-\" \"PostmanRuntime/7.46.1\"","timestamp":"2025-09-19 14:43:55"}
+{"code":"ER_BAD_FIELD_ERROR","errno":1054,"level":"error","message":"Unknown column 'role_id' in 'field list'","sql":"INSERT INTO users (name, email, password, role_id) VALUES (?, ?, ?, ?)","sqlMessage":"Unknown column 'role_id' in 'field list'","sqlState":"42S22","stack":"Error: Unknown column 'role_id' in 'field list'\n    at PromisePool.execute (C:\\Users\\Endri Azizi\\progetti-dev\\pizzeria-backend\\node_modules\\mysql2\\lib\\promise\\pool.js:54:22)\n    at Object.create (C:\\Users\\Endri Azizi\\progetti-dev\\pizzeria-backend\\models\\user.js:4:108)\n    at async register (C:\\Users\\Endri Azizi\\progetti-dev\\pizzeria-backend\\controllers\\authController.js:7:20)","timestamp":"2025-09-19 14:43:57"}
+{"level":"info","message":"::1 - - [19/Sep/2025:12:43:57 +0000] \"POST /api/v1/auth/register HTTP/1.1\" 500 54 \"-\" \"PostmanRuntime/7.46.1\"","timestamp":"2025-09-19 14:43:57"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2025-09-19 14:50:26"}
+{"level":"info","message":"Creazione utente iniziata DATA: admin@email.it","timestamp":"2025-09-19 14:50:31"}
+{"level":"info","message":"Creazione utente iniziata per email: admin@email.it","timestamp":"2025-09-19 14:50:31"}
+{"level":"error","message":"Errore durante la creazione dell'utente: Unknown column 'role_id' in 'field list'","timestamp":"2025-09-19 14:50:31"}
+{"code":"ER_BAD_FIELD_ERROR","errno":1054,"level":"error","message":"Unknown column 'role_id' in 'field list'","sql":"INSERT INTO users (name, email, password, role_id) VALUES (?, ?, ?, ?)","sqlMessage":"Unknown column 'role_id' in 'field list'","sqlState":"42S22","stack":"Error: Unknown column 'role_id' in 'field list'\n    at PromisePool.execute (C:\\Users\\Endri Azizi\\progetti-dev\\pizzeria-backend\\node_modules\\mysql2\\lib\\promise\\pool.js:54:22)\n    at Object.create (C:\\Users\\Endri Azizi\\progetti-dev\\pizzeria-backend\\models\\user.js:12:33)\n    at async register (C:\\Users\\Endri Azizi\\progetti-dev\\pizzeria-backend\\controllers\\authController.js:7:20)","timestamp":"2025-09-19 14:50:31"}
+{"level":"info","message":"::1 - - [19/Sep/2025:12:50:31 +0000] \"POST /api/v1/auth/register HTTP/1.1\" 500 54 \"-\" \"PostmanRuntime/7.46.1\"","timestamp":"2025-09-19 14:50:31"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2025-09-19 14:53:06"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2025-09-19 14:53:10"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2025-09-19 14:53:13"}
+{"level":"info","message":"Richiesta di registrazione utente: admin@email.it","timestamp":"2025-09-19 14:53:16"}
+{"level":"info","message":"Creazione utente iniziata DATA: admin@email.it","timestamp":"2025-09-19 14:53:16"}
+{"level":"info","message":"Creazione utente iniziata per email: admin@email.it","timestamp":"2025-09-19 14:53:16"}
+{"level":"error","message":"Errore durante la creazione dell'utente: Unknown column 'role_id' in 'field list'","timestamp":"2025-09-19 14:53:16"}
+{"level":"error","message":"Errore durante la registrazione utente: Unknown column 'role_id' in 'field list'","timestamp":"2025-09-19 14:53:16"}
+{"level":"info","message":"::1 - - [19/Sep/2025:12:53:16 +0000] \"POST /api/v1/auth/register HTTP/1.1\" 500 54 \"-\" \"PostmanRuntime/7.46.1\"","timestamp":"2025-09-19 14:53:16"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2025-09-19 14:54:23"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2025-09-19 14:54:26"}
+{"level":"info","message":"Richiesta di registrazione utente: admin@email.it","timestamp":"2025-09-19 14:54:34"}
+{"level":"info","message":"Richiesta di registrazione BODY: {\n  name: 'admin',\n  email: 'admin@email.it',\n  password: 'password123',\n  role_id: 1\n}","timestamp":"2025-09-19 14:54:34"}
+{"level":"info","message":"Creazione utente iniziata DATA: admin@email.it","timestamp":"2025-09-19 14:54:34"}
+{"level":"info","message":"Creazione utente iniziata per email: admin@email.it","timestamp":"2025-09-19 14:54:34"}
+{"level":"error","message":"Errore durante la creazione dell'utente: Unknown column 'role_id' in 'field list'","timestamp":"2025-09-19 14:54:34"}
+{"level":"error","message":"Errore durante la registrazione utente: Unknown column 'role_id' in 'field list'","timestamp":"2025-09-19 14:54:34"}
+{"level":"info","message":"::1 - - [19/Sep/2025:12:54:34 +0000] \"POST /api/v1/auth/register HTTP/1.1\" 500 54 \"-\" \"PostmanRuntime/7.46.1\"","timestamp":"2025-09-19 14:54:34"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2025-09-19 14:56:05"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2025-09-19 14:56:09"}
+{"level":"info","message":"Richiesta di registrazione utente: admin@email.it","timestamp":"2025-09-19 14:56:15"}
+{"level":"info","message":"Richiesta di registrazione BODY: {\n  name: 'admin',\n  email: 'admin@email.it',\n  password: 'password123',\n  role_id: 1\n}","timestamp":"2025-09-19 14:56:15"}
+{"level":"info","message":"Creazione utente iniziata DATA: admin@email.it","timestamp":"2025-09-19 14:56:15"}
+{"level":"info","message":"Creazione utente iniziata per email: admin@email.it","timestamp":"2025-09-19 14:56:15"}
+{"level":"info","message":"Creazione utente iniziata per email: 1","timestamp":"2025-09-19 14:56:15"}
+{"level":"error","message":"Errore durante la creazione dell'utente: Unknown column 'role_id' in 'field list'","timestamp":"2025-09-19 14:56:15"}
+{"level":"error","message":"Errore durante la registrazione utente: Unknown column 'role_id' in 'field list'","timestamp":"2025-09-19 14:56:15"}
+{"level":"info","message":"::1 - - [19/Sep/2025:12:56:15 +0000] \"POST /api/v1/auth/register HTTP/1.1\" 500 54 \"-\" \"PostmanRuntime/7.46.1\"","timestamp":"2025-09-19 14:56:15"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2025-09-19 14:57:29"}
+{"level":"info","message":"Richiesta di registrazione utente: admin@email.it","timestamp":"2025-09-19 14:57:33"}
+{"level":"info","message":"Richiesta di registrazione BODY: {\n  name: 'admin',\n  email: 'admin@email.it',\n  password: 'password123',\n  role_id: 1\n}","timestamp":"2025-09-19 14:57:33"}
+{"level":"info","message":"Creazione utente iniziata DATA: admin@email.it","timestamp":"2025-09-19 14:57:33"}
+{"level":"info","message":"Creazione utente iniziata per email: admin@email.it","timestamp":"2025-09-19 14:57:33"}
+{"level":"info","message":"Creazione utente iniziata per role_id: 1","timestamp":"2025-09-19 14:57:33"}
+{"level":"info","message":"Creazione utente iniziata per hashed: $2b$10$AabXh9JRv/JbZQt7S7eNXeAuGKoLOS/sPNNULD3C8g8o/SXV23HV6","timestamp":"2025-09-19 14:57:33"}
+{"level":"error","message":"Errore durante la creazione dell'utente: Unknown column 'role_id' in 'field list'","timestamp":"2025-09-19 14:57:33"}
+{"level":"error","message":"Errore durante la registrazione utente: Unknown column 'role_id' in 'field list'","timestamp":"2025-09-19 14:57:33"}
+{"level":"info","message":"::1 - - [19/Sep/2025:12:57:33 +0000] \"POST /api/v1/auth/register HTTP/1.1\" 500 54 \"-\" \"PostmanRuntime/7.46.1\"","timestamp":"2025-09-19 14:57:33"}
+{"level":"info","message":"Tentativo di login per email: admin@email.it","timestamp":"2025-09-19 15:00:05"}
+{"level":"info","message":"Ricerca utente per email: admin@email.it","timestamp":"2025-09-19 15:00:05"}
+{"level":"info","message":"Utente trovato: NO","timestamp":"2025-09-19 15:00:05"}
+{"level":"error","message":"Errore durante il login per email admin@email.it: User not found","timestamp":"2025-09-19 15:00:05"}
+{"level":"info","message":"::1 - - [19/Sep/2025:13:00:05 +0000] \"POST /api/v1/auth/login HTTP/1.1\" 500 28 \"-\" \"PostmanRuntime/7.46.1\"","timestamp":"2025-09-19 15:00:05"}
+{"level":"info","message":"Tentativo di login per email: admin@email.it","timestamp":"2025-09-19 15:00:06"}
+{"level":"info","message":"Ricerca utente per email: admin@email.it","timestamp":"2025-09-19 15:00:06"}
+{"level":"info","message":"Utente trovato: NO","timestamp":"2025-09-19 15:00:06"}
+{"level":"error","message":"Errore durante il login per email admin@email.it: User not found","timestamp":"2025-09-19 15:00:06"}
+{"level":"info","message":"::1 - - [19/Sep/2025:13:00:06 +0000] \"POST /api/v1/auth/login HTTP/1.1\" 500 28 \"-\" \"PostmanRuntime/7.46.1\"","timestamp":"2025-09-19 15:00:06"}
+{"level":"info","message":"Tentativo di login per email: admin@email.it","timestamp":"2025-09-19 15:00:08"}
+{"level":"info","message":"Ricerca utente per email: admin@email.it","timestamp":"2025-09-19 15:00:08"}
+{"level":"info","message":"Utente trovato: NO","timestamp":"2025-09-19 15:00:08"}
+{"level":"error","message":"Errore durante il login per email admin@email.it: User not found","timestamp":"2025-09-19 15:00:08"}
+{"level":"info","message":"::1 - - [19/Sep/2025:13:00:08 +0000] \"POST /api/v1/auth/login HTTP/1.1\" 500 28 \"-\" \"PostmanRuntime/7.46.1\"","timestamp":"2025-09-19 15:00:08"}
+{"level":"info","message":"Tentativo di login per email: admin@email.it","timestamp":"2025-09-19 15:00:31"}
+{"level":"info","message":"Ricerca utente per email: admin@email.it","timestamp":"2025-09-19 15:00:31"}
+{"level":"info","message":"Utente trovato: NO","timestamp":"2025-09-19 15:00:31"}
+{"level":"error","message":"Errore durante il login per email admin@email.it: User not found","timestamp":"2025-09-19 15:00:31"}
+{"level":"info","message":"::1 - - [19/Sep/2025:13:00:31 +0000] \"POST /api/v1/auth/login HTTP/1.1\" 500 28 \"-\" \"PostmanRuntime/7.46.1\"","timestamp":"2025-09-19 15:00:31"}
+{"level":"info","message":"Tentativo di login per email: admin@email.it","timestamp":"2025-09-19 15:00:32"}
+{"level":"info","message":"Ricerca utente per email: admin@email.it","timestamp":"2025-09-19 15:00:32"}
+{"level":"info","message":"Utente trovato: NO","timestamp":"2025-09-19 15:00:32"}
+{"level":"error","message":"Errore durante il login per email admin@email.it: User not found","timestamp":"2025-09-19 15:00:32"}
+{"level":"info","message":"::1 - - [19/Sep/2025:13:00:32 +0000] \"POST /api/v1/auth/login HTTP/1.1\" 500 28 \"-\" \"PostmanRuntime/7.46.1\"","timestamp":"2025-09-19 15:00:32"}
+{"level":"info","message":"Tentativo di login per email: admin@email.it","timestamp":"2025-09-19 15:00:33"}
+{"level":"info","message":"Ricerca utente per email: admin@email.it","timestamp":"2025-09-19 15:00:33"}
+{"level":"info","message":"Utente trovato: NO","timestamp":"2025-09-19 15:00:33"}
+{"level":"error","message":"Errore durante il login per email admin@email.it: User not found","timestamp":"2025-09-19 15:00:33"}
+{"level":"info","message":"::1 - - [19/Sep/2025:13:00:33 +0000] \"POST /api/v1/auth/login HTTP/1.1\" 500 28 \"-\" \"PostmanRuntime/7.46.1\"","timestamp":"2025-09-19 15:00:33"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2025-09-19 15:04:01"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2025-09-19 15:08:16"}
+{"level":"info","message":"Tentativo di login per email: admin@email.it","timestamp":"2025-09-19 15:08:22"}
+{"level":"info","message":"Tentativo login per email: admin@email.it","timestamp":"2025-09-19 15:08:22"}
+{"level":"info","message":"Ricerca utente per email: admin@email.it","timestamp":"2025-09-19 15:08:22"}
+{"level":"info","message":"Utente trovato: NO","timestamp":"2025-09-19 15:08:22"}
+{"level":"warn","message":"Utente non trovato: admin@email.it","timestamp":"2025-09-19 15:08:22"}
+{"level":"error","message":"Errore login per utente admin@email.it: User not found","timestamp":"2025-09-19 15:08:22"}
+{"level":"error","message":"Errore durante il login per email admin@email.it: User not found","timestamp":"2025-09-19 15:08:22"}
+{"level":"info","message":"::1 - - [19/Sep/2025:13:08:22 +0000] \"POST /api/v1/auth/login HTTP/1.1\" 500 28 \"-\" \"PostmanRuntime/7.46.1\"","timestamp":"2025-09-19 15:08:22"}
+{"level":"info","message":"🚀 Server running on port 3000","timestamp":"2025-09-19 15:11:48"}
+{"level":"info","message":"➡️ POST /api/v1/auth/login | Body: {\"email\":\"admin@email.it\",\"password\":\"password123\"} | Query: {}","timestamp":"2025-09-19 15:11:52"}
+{"level":"info","message":"Tentativo di login per email: admin@email.it","timestamp":"2025-09-19 15:11:52"}
+{"level":"info","message":"Tentativo login per email: admin@email.it","timestamp":"2025-09-19 15:11:52"}
+{"level":"info","message":"Ricerca utente per email: admin@email.it","timestamp":"2025-09-19 15:11:52"}
+{"level":"info","message":"Utente trovato: NO","timestamp":"2025-09-19 15:11:52"}
+{"level":"warn","message":"Utente non trovato: admin@email.it","timestamp":"2025-09-19 15:11:52"}
+{"level":"error","message":"Errore login per utente admin@email.it: User not found","timestamp":"2025-09-19 15:11:52"}
+{"level":"error","message":"Errore durante il login per email admin@email.it: User not found","timestamp":"2025-09-19 15:11:52"}
+{"level":"info","message":"📡 HTTP Request: ::1 - - [19/Sep/2025:13:11:52 +0000] \"POST /api/v1/auth/login HTTP/1.1\" 500 28 \"-\" \"PostmanRuntime/7.46.1\"","timestamp":"2025-09-19 15:11:52"}
+{"level":"info","message":"🚀 Server running on port 3000","timestamp":"2025-09-19 15:13:25"}
+{"level":"info","message":"💾 Connessione al DB riuscita! Host: localhost, User: root, Database: pizzeria","timestamp":"2025-09-19 15:13:25"}
+{"level":"info","message":"🚀 Server running on port 3000","timestamp":"2025-09-19 15:13:59"}
+{"level":"info","message":"💾 Connessione al DB riuscita! Host: localhost, User: root, Database: pizzeria,Password: root","timestamp":"2025-09-19 15:13:59"}
+{"level":"info","message":"➡️ POST /api/v1/auth/login | Body: {\"email\":\"admin@email.it\",\"password\":\"password123\"} | Query: {}","timestamp":"2025-09-19 15:14:15"}
+{"level":"info","message":"Tentativo di login per email: admin@email.it","timestamp":"2025-09-19 15:14:15"}
+{"level":"info","message":"Tentativo login per email: admin@email.it","timestamp":"2025-09-19 15:14:15"}
+{"level":"info","message":"Ricerca utente per email: admin@email.it","timestamp":"2025-09-19 15:14:15"}
+{"level":"info","message":"Utente trovato: NO","timestamp":"2025-09-19 15:14:15"}
+{"level":"warn","message":"Utente non trovato: admin@email.it","timestamp":"2025-09-19 15:14:15"}
+{"level":"error","message":"Errore login per utente admin@email.it: User not found","timestamp":"2025-09-19 15:14:15"}
+{"level":"error","message":"Errore durante il login per email admin@email.it: User not found","timestamp":"2025-09-19 15:14:15"}
+{"level":"info","message":"📡 HTTP Request: ::1 - - [19/Sep/2025:13:14:15 +0000] \"POST /api/v1/auth/login HTTP/1.1\" 500 28 \"-\" \"PostmanRuntime/7.46.1\"","timestamp":"2025-09-19 15:14:15"}
+{"level":"info","message":"➡️ POST /api/v1/auth/register | Body: {\"name\":\"Mario Rossi\",\"email\":\"mario@email.it\",\"password\":\"password123\",\"role_id\":1} | Query: {}","timestamp":"2025-09-19 15:15:00"}
+{"level":"info","message":"Richiesta di registrazione utente: mario@email.it","timestamp":"2025-09-19 15:15:00"}
+{"level":"info","message":"Richiesta di registrazione BODY: {\n  name: 'Mario Rossi',\n  email: 'mario@email.it',\n  password: 'password123',\n  role_id: 1\n}","timestamp":"2025-09-19 15:15:00"}
+{"level":"info","message":"Richiesta registrazione utente: mario@email.it","timestamp":"2025-09-19 15:15:00"}
+{"level":"info","message":"Creazione utente iniziata DATA: mario@email.it","timestamp":"2025-09-19 15:15:00"}
+{"level":"info","message":"Creazione utente iniziata per email: mario@email.it","timestamp":"2025-09-19 15:15:00"}
+{"level":"info","message":"Creazione utente iniziata per role_id: 1","timestamp":"2025-09-19 15:15:00"}
+{"level":"info","message":"Creazione utente iniziata per hashed: $2b$10$HthHMdza.VVHxeHCyzyvN.kC80GBBzoDHBhhK01Kc4RAcufBWfkWC","timestamp":"2025-09-19 15:15:00"}
+{"level":"error","message":"Errore durante la creazione dell'utente: Unknown column 'role_id' in 'field list'","timestamp":"2025-09-19 15:15:00"}
+{"level":"error","message":"Errore registrazione utente mario@email.it: Unknown column 'role_id' in 'field list'","timestamp":"2025-09-19 15:15:00"}
+{"level":"error","message":"Errore durante la registrazione utente: Unknown column 'role_id' in 'field list'","timestamp":"2025-09-19 15:15:00"}
+{"level":"info","message":"📡 HTTP Request: ::1 - - [19/Sep/2025:13:15:00 +0000] \"POST /api/v1/auth/register HTTP/1.1\" 500 54 \"-\" \"PostmanRuntime/7.46.1\"","timestamp":"2025-09-19 15:15:00"}
+{"level":"info","message":"➡️ POST /api/v1/auth/register | Body: {\"name\":\"Mario Rossi\",\"email\":\"mario@email.it\",\"password\":\"password123\",\"role_id\":1} | Query: {}","timestamp":"2025-09-19 15:16:13"}
+{"level":"info","message":"Richiesta di registrazione utente: mario@email.it","timestamp":"2025-09-19 15:16:13"}
+{"level":"info","message":"Richiesta di registrazione BODY: {\n  name: 'Mario Rossi',\n  email: 'mario@email.it',\n  password: 'password123',\n  role_id: 1\n}","timestamp":"2025-09-19 15:16:13"}
+{"level":"info","message":"Richiesta registrazione utente: mario@email.it","timestamp":"2025-09-19 15:16:13"}
+{"level":"info","message":"Creazione utente iniziata DATA: mario@email.it","timestamp":"2025-09-19 15:16:13"}
+{"level":"info","message":"Creazione utente iniziata per email: mario@email.it","timestamp":"2025-09-19 15:16:13"}
+{"level":"info","message":"Creazione utente iniziata per role_id: 1","timestamp":"2025-09-19 15:16:13"}
+{"level":"info","message":"Creazione utente iniziata per hashed: $2b$10$tDmBQDqUo6ay6MOOnhdiC.o8NqgC9kMKVCPrLFICf0HowUBXv0r.q","timestamp":"2025-09-19 15:16:13"}
+{"level":"error","message":"Errore durante la creazione dell'utente: Unknown column 'role_id' in 'field list'","timestamp":"2025-09-19 15:16:13"}
+{"level":"error","message":"Errore registrazione utente mario@email.it: Unknown column 'role_id' in 'field list'","timestamp":"2025-09-19 15:16:13"}
+{"level":"error","message":"Errore durante la registrazione utente: Unknown column 'role_id' in 'field list'","timestamp":"2025-09-19 15:16:13"}
+{"level":"info","message":"📡 HTTP Request: ::1 - - [19/Sep/2025:13:16:13 +0000] \"POST /api/v1/auth/register HTTP/1.1\" 500 54 \"-\" \"PostmanRuntime/7.46.1\"","timestamp":"2025-09-19 15:16:13"}
+{"level":"info","message":"➡️ POST /api/v1/auth/login | Body: {\"email\":\"mario@email.it\",\"password\":\"password123\"} | Query: {}","timestamp":"2025-09-19 15:16:18"}
+{"level":"info","message":"Tentativo di login per email: mario@email.it","timestamp":"2025-09-19 15:16:18"}
+{"level":"info","message":"Tentativo login per email: mario@email.it","timestamp":"2025-09-19 15:16:18"}
+{"level":"info","message":"Ricerca utente per email: mario@email.it","timestamp":"2025-09-19 15:16:18"}
+{"level":"info","message":"Utente trovato: NO","timestamp":"2025-09-19 15:16:18"}
+{"level":"warn","message":"Utente non trovato: mario@email.it","timestamp":"2025-09-19 15:16:18"}
+{"level":"error","message":"Errore login per utente mario@email.it: User not found","timestamp":"2025-09-19 15:16:18"}
+{"level":"error","message":"Errore durante il login per email mario@email.it: User not found","timestamp":"2025-09-19 15:16:18"}
+{"level":"info","message":"📡 HTTP Request: ::1 - - [19/Sep/2025:13:16:18 +0000] \"POST /api/v1/auth/login HTTP/1.1\" 500 28 \"-\" \"PostmanRuntime/7.46.1\"","timestamp":"2025-09-19 15:16:18"}
+{"level":"info","message":"➡️ POST /api/v1/auth/login | Body: {\"email\":\"mario@email.it\",\"password\":\"password123\"} | Query: {}","timestamp":"2025-09-19 15:16:20"}
+{"level":"info","message":"Tentativo di login per email: mario@email.it","timestamp":"2025-09-19 15:16:20"}
+{"level":"info","message":"Tentativo login per email: mario@email.it","timestamp":"2025-09-19 15:16:20"}
+{"level":"info","message":"Ricerca utente per email: mario@email.it","timestamp":"2025-09-19 15:16:20"}
+{"level":"info","message":"Utente trovato: NO","timestamp":"2025-09-19 15:16:20"}
+{"level":"warn","message":"Utente non trovato: mario@email.it","timestamp":"2025-09-19 15:16:20"}
+{"level":"error","message":"Errore login per utente mario@email.it: User not found","timestamp":"2025-09-19 15:16:20"}
+{"level":"error","message":"Errore durante il login per email mario@email.it: User not found","timestamp":"2025-09-19 15:16:20"}
+{"level":"info","message":"📡 HTTP Request: ::1 - - [19/Sep/2025:13:16:20 +0000] \"POST /api/v1/auth/login HTTP/1.1\" 500 28 \"-\" \"PostmanRuntime/7.46.1\"","timestamp":"2025-09-19 15:16:20"}
+{"level":"info","message":"➡️ POST /api/v1/auth/login | Body: {\"email\":\"admin@email.it\",\"password\":\"password123\"} | Query: {}","timestamp":"2025-09-19 15:16:24"}
+{"level":"info","message":"Tentativo di login per email: admin@email.it","timestamp":"2025-09-19 15:16:24"}
+{"level":"info","message":"Tentativo login per email: admin@email.it","timestamp":"2025-09-19 15:16:24"}
+{"level":"info","message":"Ricerca utente per email: admin@email.it","timestamp":"2025-09-19 15:16:24"}
+{"level":"info","message":"Utente trovato: NO","timestamp":"2025-09-19 15:16:24"}
+{"level":"warn","message":"Utente non trovato: admin@email.it","timestamp":"2025-09-19 15:16:24"}
+{"level":"error","message":"Errore login per utente admin@email.it: User not found","timestamp":"2025-09-19 15:16:24"}
+{"level":"error","message":"Errore durante il login per email admin@email.it: User not found","timestamp":"2025-09-19 15:16:24"}
+{"level":"info","message":"📡 HTTP Request: ::1 - - [19/Sep/2025:13:16:24 +0000] \"POST /api/v1/auth/login HTTP/1.1\" 500 28 \"-\" \"PostmanRuntime/7.46.1\"","timestamp":"2025-09-19 15:16:24"}
+{"level":"info","message":"➡️ POST /api/v1/auth/login | Body: {\"email\":\"admin@email.it\",\"password\":\"password123\"} | Query: {}","timestamp":"2025-09-19 15:16:25"}
+{"level":"info","message":"Tentativo di login per email: admin@email.it","timestamp":"2025-09-19 15:16:25"}
+{"level":"info","message":"Tentativo login per email: admin@email.it","timestamp":"2025-09-19 15:16:25"}
+{"level":"info","message":"Ricerca utente per email: admin@email.it","timestamp":"2025-09-19 15:16:25"}
+{"level":"info","message":"Utente trovato: NO","timestamp":"2025-09-19 15:16:25"}
+{"level":"warn","message":"Utente non trovato: admin@email.it","timestamp":"2025-09-19 15:16:25"}
+{"level":"error","message":"Errore login per utente admin@email.it: User not found","timestamp":"2025-09-19 15:16:25"}
+{"level":"error","message":"Errore durante il login per email admin@email.it: User not found","timestamp":"2025-09-19 15:16:25"}
+{"level":"info","message":"📡 HTTP Request: ::1 - - [19/Sep/2025:13:16:25 +0000] \"POST /api/v1/auth/login HTTP/1.1\" 500 28 \"-\" \"PostmanRuntime/7.46.1\"","timestamp":"2025-09-19 15:16:25"}
+{"level":"info","message":"➡️ POST /api/v1/auth/login | Body: {\"email\":\"admin@email.it\",\"password\":\"password123\"} | Query: {}","timestamp":"2025-09-19 15:16:26"}
+{"level":"info","message":"Tentativo di login per email: admin@email.it","timestamp":"2025-09-19 15:16:26"}
+{"level":"info","message":"Tentativo login per email: admin@email.it","timestamp":"2025-09-19 15:16:26"}
+{"level":"info","message":"Ricerca utente per email: admin@email.it","timestamp":"2025-09-19 15:16:26"}
+{"level":"info","message":"Utente trovato: NO","timestamp":"2025-09-19 15:16:26"}
+{"level":"warn","message":"Utente non trovato: admin@email.it","timestamp":"2025-09-19 15:16:26"}
+{"level":"error","message":"Errore login per utente admin@email.it: User not found","timestamp":"2025-09-19 15:16:26"}
+{"level":"error","message":"Errore durante il login per email admin@email.it: User not found","timestamp":"2025-09-19 15:16:26"}
+{"level":"info","message":"📡 HTTP Request: ::1 - - [19/Sep/2025:13:16:26 +0000] \"POST /api/v1/auth/login HTTP/1.1\" 500 28 \"-\" \"PostmanRuntime/7.46.1\"","timestamp":"2025-09-19 15:16:26"}
+{"level":"info","message":"🚀 Server running on port 3000","timestamp":"2025-09-19 15:16:30"}
+{"level":"info","message":"💾 Connessione al DB riuscita! Host: localhost, User: root, Database: lanterna,Password: root","timestamp":"2025-09-19 15:16:30"}
+{"level":"info","message":"➡️ POST /api/v1/auth/login | Body: {\"email\":\"admin@email.it\",\"password\":\"password123\"} | Query: {}","timestamp":"2025-09-19 15:16:33"}
+{"level":"info","message":"Tentativo di login per email: admin@email.it","timestamp":"2025-09-19 15:16:33"}
+{"level":"info","message":"Tentativo login per email: admin@email.it","timestamp":"2025-09-19 15:16:33"}
+{"level":"info","message":"Ricerca utente per email: admin@email.it","timestamp":"2025-09-19 15:16:33"}
+{"level":"info","message":"Utente trovato: SI","timestamp":"2025-09-19 15:16:33"}
+{"level":"info","message":"Password inserita dall'utente: password123","timestamp":"2025-09-19 15:16:33"}
+{"level":"info","message":"Password hash dal DB: $2b$10$AabXh9JRv/JbZQt7S7eNXeAuGKoLOS/sPNNULD3C8g8o/SXV23HV6","timestamp":"2025-09-19 15:16:33"}
+{"level":"info","message":"Payload JWT generato per utente admin@email.it: { user_id: 1, role_id: 1 }","timestamp":"2025-09-19 15:16:33"}
+{"level":"info","message":"Login riuscito per utente: admin@email.it","timestamp":"2025-09-19 15:16:33"}
+{"level":"info","message":"Login riuscito per email: admin@email.it","timestamp":"2025-09-19 15:16:33"}
+{"level":"info","message":"📡 HTTP Request: ::1 - - [19/Sep/2025:13:16:33 +0000] \"POST /api/v1/auth/login HTTP/1.1\" 200 240 \"-\" \"PostmanRuntime/7.46.1\"","timestamp":"2025-09-19 15:16:33"}
+{"level":"info","message":"➡️ POST /api/v1/auth/register | Body: {\"name\":\"Mario Rossi\",\"email\":\"mario@email.it\",\"password\":\"password123\",\"role_id\":1} | Query: {}","timestamp":"2025-09-19 15:16:38"}
+{"level":"info","message":"Richiesta di registrazione utente: mario@email.it","timestamp":"2025-09-19 15:16:38"}
+{"level":"info","message":"Richiesta di registrazione BODY: {\n  name: 'Mario Rossi',\n  email: 'mario@email.it',\n  password: 'password123',\n  role_id: 1\n}","timestamp":"2025-09-19 15:16:38"}
+{"level":"info","message":"Richiesta registrazione utente: mario@email.it","timestamp":"2025-09-19 15:16:38"}
+{"level":"info","message":"Creazione utente iniziata DATA: mario@email.it","timestamp":"2025-09-19 15:16:38"}
+{"level":"info","message":"Creazione utente iniziata per email: mario@email.it","timestamp":"2025-09-19 15:16:38"}
+{"level":"info","message":"Creazione utente iniziata per role_id: 1","timestamp":"2025-09-19 15:16:38"}
+{"level":"info","message":"Creazione utente iniziata per hashed: $2b$10$M6UlpYBermelIr8/t8wJSeyWmveMvCoao6Bla0YTNyyUDpWni/lgK","timestamp":"2025-09-19 15:16:38"}
+{"level":"info","message":"Utente creato con ID: 2","timestamp":"2025-09-19 15:16:38"}
+{"level":"info","message":"Utente registrato con ID: 2, email: mario@email.it","timestamp":"2025-09-19 15:16:38"}
+{"level":"info","message":"Registrazione completata per utente ID: 2, email: mario@email.it","timestamp":"2025-09-19 15:16:38"}
+{"level":"info","message":"📡 HTTP Request: ::1 - - [19/Sep/2025:13:16:38 +0000] \"POST /api/v1/auth/register HTTP/1.1\" 200 71 \"-\" \"PostmanRuntime/7.46.1\"","timestamp":"2025-09-19 15:16:38"}
