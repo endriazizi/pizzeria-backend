@@ -15,6 +15,8 @@ git add .
 
 git commit -m "🚀 Prima versione backend con logging Winston e connessione DB"
 
+git commit -m "🚀 node version"
+
 # 5️⃣ Push su branch principale (main o master)
 
 git branch -M main
