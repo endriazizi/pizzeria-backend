@@ -38,6 +38,15 @@ app.use('/api/v1/orders', orderRoutes);
 app.use('/api/v1/order_items', orderItemRoutes);
 app.use('/api/v1/auth', authRoutes);
 
+// Option 1: direttamente in server.js
+app.get('/api/v1/health', (req, res) => {
+  res.json({
+    status: 'ok',
+    timestamp: new Date(),
+    message: 'Server is alive 🚀',
+  });
+});
+
 // Error handler globale
 app.use((err, req, res, next) => {
   logger.error(`❌ Errore: ${err.message}`);
