@@ -215,3 +215,42 @@
 {"level":"info","message":"Utente registrato con ID: 2, email: mario@email.it","timestamp":"2025-09-19 15:16:38"}
 {"level":"info","message":"Registrazione completata per utente ID: 2, email: mario@email.it","timestamp":"2025-09-19 15:16:38"}
 {"level":"info","message":"📡 HTTP Request: ::1 - - [19/Sep/2025:13:16:38 +0000] \"POST /api/v1/auth/register HTTP/1.1\" 200 71 \"-\" \"PostmanRuntime/7.46.1\"","timestamp":"2025-09-19 15:16:38"}
+{"level":"info","message":"🚀 Server running on port 3000","timestamp":"2025-09-19 20:17:48"}
+{"level":"info","message":"💾 Connessione al DB riuscita! Host: localhost, User: root, Database: lanterna,Password: root","timestamp":"2025-09-19 20:17:48"}
+{"level":"info","message":"➡️ POST /api/v1/auth/login | Body: {\"email\":\"admin@email.it\",\"password\":\"password123\"} | Query: {}","timestamp":"2025-09-19 20:17:58"}
+{"level":"info","message":"Tentativo di login per email: admin@email.it","timestamp":"2025-09-19 20:17:58"}
+{"level":"info","message":"Tentativo login per email: admin@email.it","timestamp":"2025-09-19 20:17:58"}
+{"level":"info","message":"Ricerca utente per email: admin@email.it","timestamp":"2025-09-19 20:17:58"}
+{"level":"info","message":"Utente trovato: SI","timestamp":"2025-09-19 20:17:58"}
+{"level":"info","message":"Password inserita dall'utente: password123","timestamp":"2025-09-19 20:17:58"}
+{"level":"info","message":"Password hash dal DB: $2b$10$AabXh9JRv/JbZQt7S7eNXeAuGKoLOS/sPNNULD3C8g8o/SXV23HV6","timestamp":"2025-09-19 20:17:58"}
+{"level":"info","message":"Payload JWT generato per utente admin@email.it: { user_id: 1, role_id: 1 }","timestamp":"2025-09-19 20:17:58"}
+{"level":"info","message":"Login riuscito per utente: admin@email.it","timestamp":"2025-09-19 20:17:58"}
+{"level":"info","message":"Login riuscito per email: admin@email.it","timestamp":"2025-09-19 20:17:58"}
+{"level":"info","message":"📡 HTTP Request: ::1 - - [19/Sep/2025:18:17:58 +0000] \"POST /api/v1/auth/login HTTP/1.1\" 200 240 \"-\" \"PostmanRuntime/7.46.1\"","timestamp":"2025-09-19 20:17:58"}
+{"level":"info","message":"➡️ POST /api/v1/auth/login | Body: {\"email\":\"admin@email.it\",\"password\":\"password123\"} | Query: {}","timestamp":"2025-09-19 20:18:00"}
+{"level":"info","message":"Tentativo di login per email: admin@email.it","timestamp":"2025-09-19 20:18:00"}
+{"level":"info","message":"Tentativo login per email: admin@email.it","timestamp":"2025-09-19 20:18:00"}
+{"level":"info","message":"Ricerca utente per email: admin@email.it","timestamp":"2025-09-19 20:18:00"}
+{"level":"info","message":"Utente trovato: SI","timestamp":"2025-09-19 20:18:00"}
+{"level":"info","message":"Password inserita dall'utente: password123","timestamp":"2025-09-19 20:18:00"}
+{"level":"info","message":"Password hash dal DB: $2b$10$AabXh9JRv/JbZQt7S7eNXeAuGKoLOS/sPNNULD3C8g8o/SXV23HV6","timestamp":"2025-09-19 20:18:00"}
+{"level":"info","message":"Payload JWT generato per utente admin@email.it: { user_id: 1, role_id: 1 }","timestamp":"2025-09-19 20:18:00"}
+{"level":"info","message":"Login riuscito per utente: admin@email.it","timestamp":"2025-09-19 20:18:00"}
+{"level":"info","message":"Login riuscito per email: admin@email.it","timestamp":"2025-09-19 20:18:00"}
+{"level":"info","message":"📡 HTTP Request: ::1 - - [19/Sep/2025:18:18:00 +0000] \"POST /api/v1/auth/login HTTP/1.1\" 200 240 \"-\" \"PostmanRuntime/7.46.1\"","timestamp":"2025-09-19 20:18:00"}
+{"level":"info","message":"🚀 Server running on port 3000","timestamp":"2025-09-19 23:00:06"}
+{"level":"info","message":"💾 Connessione al DB riuscita! Host: localhost, User: root, Database: lanterna,Password: root","timestamp":"2025-09-19 23:00:06"}
+{"level":"info","message":"🚀 Server running on port 3000","timestamp":"2025-09-19 23:01:11"}
+{"level":"info","message":"💾 Connessione al DB riuscita! Host: localhost, User: root, Database: lanterna","timestamp":"2025-09-19 23:01:11"}
+{"level":"info","message":"➡️ POST /api/v1/auth/login | Body: {\"email\":\"admin@email.it\",\"password\":\"password123\"} | Query: {}","timestamp":"2025-09-19 23:01:26"}
+{"level":"info","message":"Tentativo di login per email: admin@email.it","timestamp":"2025-09-19 23:01:26"}
+{"level":"info","message":"Tentativo login per email: admin@email.it","timestamp":"2025-09-19 23:01:26"}
+{"level":"info","message":"Ricerca utente per email: admin@email.it","timestamp":"2025-09-19 23:01:26"}
+{"level":"info","message":"Utente trovato: SI","timestamp":"2025-09-19 23:01:26"}
+{"level":"info","message":"Password inserita dall'utente: password123","timestamp":"2025-09-19 23:01:26"}
+{"level":"info","message":"Password hash dal DB: $2b$10$AabXh9JRv/JbZQt7S7eNXeAuGKoLOS/sPNNULD3C8g8o/SXV23HV6","timestamp":"2025-09-19 23:01:26"}
+{"level":"info","message":"Payload JWT generato per utente admin@email.it: { user_id: 1, role_id: 1 }","timestamp":"2025-09-19 23:01:26"}
+{"level":"info","message":"Login riuscito per utente: admin@email.it","timestamp":"2025-09-19 23:01:26"}
+{"level":"info","message":"Login riuscito per email: admin@email.it","timestamp":"2025-09-19 23:01:26"}
+{"level":"info","message":"📡 HTTP Request: ::1 - - [19/Sep/2025:21:01:26 +0000] \"POST /api/v1/auth/login HTTP/1.1\" 200 240 \"-\" \"PostmanRuntime/7.46.1\"","timestamp":"2025-09-19 23:01:26"}
