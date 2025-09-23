@@ -13,14 +13,15 @@ module.exports = {
       logger.info('Creazione utente iniziata per hashed: %s', hashed);
 
       const [result] = await db.execute(
-        'INSERT INTO users (name, email, password, role_id) VALUES (?, ?, ?, ?)',
-        [data.name, data.email, hashed, data.role_id]
+        'INSERT INTO users (name, surname, email, password, role_id) VALUES (?, ?, ?, ?, ?)',
+        [data.name, data.surname, data.email, hashed, data.role_id]
       );
 
       logger.info('Utente creato con ID: %d', result.insertId);
       return {
         user_id: result.insertId,
         name: data.name,
+        surname: data.surname,
         email: data.email,
         role_id: data.role_id,
       };

@@ -31,6 +31,9 @@ module.exports = {
       logger.info('Richiesta di registrazione utente: %s', req.body.email);
       logger.info('Richiesta di registrazione BODY: %s', req.body);
 
+      // Log body ricevuto
+      logger.info(`📩 Body ricevuto: ${JSON.stringify(req.body)}`);
+
       const user = await authService.register(req.body);
 
       logger.info(
@@ -38,6 +41,8 @@ module.exports = {
         user.user_id,
         user.email
       );
+
+      logger.warn("⚠️ Uno dei campi obbligatori è mancante!");
       res.json(user);
     } catch (err) {
       logger.error('Errore durante la registrazione utente: %s', err.message);

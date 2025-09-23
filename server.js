@@ -55,6 +55,7 @@ app.use((err, req, res, next) => {
 });
 
 // Connessione al DB con logging
+console.log(`💾 Connessione al DB riuscita! Host: ${process.env.DB_HOST}, User: ${process.env.DB_USER}, Database: ${process.env.DB_NAME}, Database: ${process.env.DB_PASSWORD}`);
 (async () => {
   try {
     const connection = await db.getConnection();
@@ -69,7 +70,7 @@ app.use((err, req, res, next) => {
 })();
 
 // Avvio server
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => {
   logger.info(`🚀 Server running on port ${PORT}`);
   console.log(`Server running on port ${PORT}`);
