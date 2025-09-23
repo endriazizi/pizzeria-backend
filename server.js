@@ -38,12 +38,16 @@ app.use('/api/v1/orders', orderRoutes);
 app.use('/api/v1/order_items', orderItemRoutes);
 app.use('/api/v1/auth', authRoutes);
 
+
+const VERSIONE = process.env.VERSIONE || 0.01;
+
+
 // Option 1: direttamente in server.js
 app.get('/api/v1/health', (req, res) => {
   res.json({
     status: 'ok',
     timestamp: new Date(),
-    message: 'Server is alive 🚀',
+    message: `Server is alive 🚀 ${VERSIONE}`
   });
 });
 
@@ -60,7 +64,7 @@ console.log(`💾 Connessione al DB riuscita! Host: ${process.env.DB_HOST}, User
   try {
     const connection = await db.getConnection();
     logger.info(
-      `💾 Connessione al DB riuscita! Host: ${process.env.DB_HOST}, User: ${process.env.DB_USER}, Database: ${process.env.DB_NAME}`
+      `💾 Connessione al DB riuscita! Host: ${process.env.DB_HOST}, ${process.env.DB_USER}, Database: ${process.env.DB_NAME} Host: ${process.env.DB_PORT}, Password: ${process.env.DB_PASSWORD}`
     );
     // ⚠️ Evita di loggare password in produzione!
     connection.release();
