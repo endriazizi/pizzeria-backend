@@ -13,7 +13,23 @@ const reservationsRoutes = require('./routes/reservations');
 const authRoutes = require('./routes/auth');
 
 const app = express();
-app.use(cors());
+
+// CORS configuration
+const corsOptions = {
+  origin: [
+    'http://localhost:8100',
+    'http://localhost',
+    'capacitor://localhost',
+    'http://localhost:8080',
+    process.env.FRONTEND_URL || 'https://devendriazizi.com'
+  ],
+  methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
+  allowedHeaders: ['Content-Type', 'Authorization']
+};
+
+// Apply CORS middleware
+
+app.use(cors(corsOptions));
 app.use(express.json());
 
 // Morgan -> Winston con icone
