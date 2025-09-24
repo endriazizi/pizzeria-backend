@@ -17,11 +17,13 @@ const app = express();
 // CORS configuration
 const corsOptions = {
   origin: [
-    'http://localhost:8100',
-    'http://localhost',
-    'capacitor://localhost',
-    'http://localhost:8080',
-    process.env.FRONTEND_URL || 'https://devendriazizi.com'
+    'http://localhost:8100',  // Ionic serve
+    'http://localhost',       // Capacitor Android/iOS
+    'capacitor://localhost',  // Capacitor iOS
+    'http://localhost:8080', // Capacitor Android
+    'http://dev.endriazizi.com', // Your production domain
+    'https://dev.endriazizi.com' // HTTPS version
+    // process.env.FRONTEND_URL || 'https://devendriazizi.com'
   ],
   methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
   allowedHeaders: ['Content-Type', 'Authorization']
