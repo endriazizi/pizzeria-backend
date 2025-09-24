@@ -1,0 +1,21 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "Debug with Nodemon",
+      "runtimeExecutable": "nodemon",
+      "runtimeArgs": ["--inspect"],
+      "console": "integratedTerminal",
+      "internalConsoleOptions": "neverOpen",
+      "cwd": "${workspaceFolder}",
+      "args": ["${workspaceFolder}/server.js"],
+      "restart": true,
+      "env": {
+        "NODE_ENV": "development"
+      },
+      "skipFiles": ["<node_internals>/**"]
+    }
+  ]
+}

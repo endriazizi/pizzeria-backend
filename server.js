@@ -8,7 +8,7 @@ const db = require('./config/db'); // Connessione MySQL
 
 const orderRoutes = require('./routes/orders');
 const orderItemRoutes = require('./routes/orderItems');
-const roomsRoutes = require('./routes/rooms');
+const roomsRoutes = require('./routes/room.routes');
 const reservationsRoutes = require('./routes/reservations');
 const authRoutes = require('./routes/auth');
 
@@ -40,7 +40,9 @@ app.use('/api/v1/orders', orderRoutes);
 app.use('/api/v1/order_items', orderItemRoutes);
 app.use('/api/v1/auth', authRoutes);
 
-app.use('/api/v1/rooms', roomsRoutes);
+//ROOMS
+app.use("/api/v1/rooms", roomsRoutes);
+//RESSERVATIONS
 app.use('/api/v1/reservations', reservationsRoutes);
 
 
