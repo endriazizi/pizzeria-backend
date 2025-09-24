@@ -8,6 +8,8 @@ const db = require('./config/db'); // Connessione MySQL
 
 const orderRoutes = require('./routes/orders');
 const orderItemRoutes = require('./routes/orderItems');
+const roomsRoutes = require('./routes/rooms');
+const reservationsRoutes = require('./routes/reservations');
 const authRoutes = require('./routes/auth');
 
 const app = express();
@@ -38,6 +40,9 @@ app.use('/api/v1/orders', orderRoutes);
 app.use('/api/v1/order_items', orderItemRoutes);
 app.use('/api/v1/auth', authRoutes);
 
+app.use('/api/v1/rooms', roomsRoutes);
+app.use('/api/v1/reservations', reservationsRoutes);
+
 
 const VERSIONE = process.env.VERSIONE || 0.01;
 
@@ -47,6 +52,7 @@ app.get('/api/v1/health', (req, res) => {
   res.json({
     status: 'ok',
     timestamp: new Date(),
+    //environment: process.env.NODE_ENV || 'development',
     message: `Server is alive 🚀 ${VERSIONE}`
   });
 });
