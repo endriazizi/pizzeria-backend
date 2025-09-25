@@ -20,11 +20,16 @@ const app = express();
 //   credentials: true
 // }));
 
-const corsOptions = {
-  origin: "https://dev.endriazizi.com"
-};
+// const corsOptions = {
+//   origin: "https://dev.endriazizi.com"
+// };
 
-app.use(cors(corsOptions));
+
+// app.use(cors(corsOptions));
+
+app.use(cors({ origin: "*" }));
+
+
 
 
 
