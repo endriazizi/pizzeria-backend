@@ -27,9 +27,15 @@ const app = express();
 
 // app.use(cors(corsOptions));
 
-app.use(cors({ origin: "*" }));
+// app.use(cors({ origin: "*" }));
 
-
+app.use(cors({
+  origin: ['http://localhost:8101', , 'http://dev.endriazizi.com', 'https://dev.endriazizi.com'],
+  credentials: true,
+  methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
+  allowedHeaders: ['Content-Type', 'Authorization']
+}));
+app.options('*', (req, res) => res.sendStatus(204));
 
 
 
