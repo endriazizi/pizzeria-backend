@@ -13,40 +13,46 @@ const reservationsRoutes = require('./routes/reservations');
 const authRoutes = require('./routes/auth');
 
 const app = express();
-
-// Updated CORS configuration
-const corsOptions = {
-  origin: function (origin, callback) {
-    const allowedOrigins = [
-      'http://localhost:8100',
-      'http://localhost',
-      'capacitor://localhost',
-      'http://localhost:8080',
-      'http://dev.endriazizi.com',
-      'https://dev.endriazizi.com',
-      undefined
-    ];
-
-    const isAllowed = !origin || allowedOrigins.includes(origin);
-    callback(null, isAllowed);
-  },
+app.use(cors({
+  origin: 'https://dev.endriazizi.com', // Allow all origins
   methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS', 'PATCH'],
   allowedHeaders: ['Content-Type', 'Authorization', 'X-Requested-With'],
   credentials: true
-};
+}));
 
-// Apply middleware in this order
-app.use(cors(corsOptions));
-app.options('*', cors(corsOptions)); // Handle preflight for all routes
+// // Updated CORS configuration
+// const corsOptions = {
+//   origin: function (origin, callback) {
+//     const allowedOrigins = [
+//       'http://localhost:8100',
+//       'http://localhost',
+//       'capacitor://localhost',
+//       'http://localhost:8080',
+//       'http://dev.endriazizi.com',
+//       'https://dev.endriazizi.com',
+//       undefined
+//     ];
 
-// Handle OPTIONS for API routes specifically
-app.options('/api/v1/*', (req, res) => {
-  res.header('Access-Control-Allow-Origin', req.headers.origin);
-  res.header('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE, OPTIONS, PATCH');
-  res.header('Access-Control-Allow-Headers', 'Content-Type, Authorization, X-Requested-With');
-  res.header('Access-Control-Allow-Credentials', 'true');
-  res.sendStatus(200);
-});
+//     const isAllowed = !origin || allowedOrigins.includes(origin);
+//     callback(null, isAllowed);
+//   },
+//   methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS', 'PATCH'],
+//   allowedHeaders: ['Content-Type', 'Authorization', 'X-Requested-With'],
+//   credentials: true
+// };
+
+// // Apply middleware in this order
+// app.use(cors(corsOptions));
+// app.options('*', cors(corsOptions)); // Handle preflight for all routes
+
+// // Handle OPTIONS for API routes specifically
+// app.options('/api/v1/*', (req, res) => {
+//   res.header('Access-Control-Allow-Origin', req.headers.origin);
+//   res.header('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE, OPTIONS, PATCH');
+//   res.header('Access-Control-Allow-Headers', 'Content-Type, Authorization, X-Requested-With');
+//   res.header('Access-Control-Allow-Credentials', 'true');
+//   res.sendStatus(200);
+// });
 
 app.use(express.json());
 
