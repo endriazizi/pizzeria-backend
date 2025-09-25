@@ -29,13 +29,35 @@ const app = express();
 
 // app.use(cors({ origin: "*" }));
 
+// app.use(cors({
+//   origin: ['http://localhost:8101', 'http://dev.endriazizi.com', 'https://dev.endriazizi.com'],
+//   credentials: true,
+//   methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
+//   allowedHeaders: ['Content-Type', 'Authorization']
+// }));
+// app.options('*', (req, res) => res.sendStatus(204));
+
+
+const allowedOrigins = [
+
+  'http://127.0.0.1:8100',
+  'http://localhost:8101',
+  'http://localhost:8100',
+  'http://localhost:8101',
+  'http://dev.endriazizi.com',
+  'https://dev.endriazizi.com'
+];
+
 app.use(cors({
-  origin: ['http://localhost:8101', 'http://dev.endriazizi.com', 'https://dev.endriazizi.com'],
-  credentials: true,
-  methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
-  allowedHeaders: ['Content-Type', 'Authorization']
+  origin: (origin, callback) => {
+    if (!origin || allowedOrigins.includes(origin)) {
+      callback(null, true);
+    } else {
+      callback(new Error('Not allowed by CORS'));
+    }
+  },
+  credentials: true
 }));
-app.options('*', (req, res) => res.sendStatus(204));
 
 
 
