@@ -13,12 +13,20 @@ const reservationsRoutes = require('./routes/reservations');
 const authRoutes = require('./routes/auth');
 
 const app = express();
-app.use(cors({
-  origin: 'https://dev.endriazizi.com', // Allow all origins
-  methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS', 'PATCH'],
-  allowedHeaders: ['Content-Type', 'Authorization', 'X-Requested-With'],
-  credentials: true
-}));
+// app.use(cors({
+//   origin: 'https://dev.endriazizi.com', // Allow all origins
+//   methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS', 'PATCH'],
+//   allowedHeaders: ['Content-Type', 'Authorization', 'X-Requested-With'],
+//   credentials: true
+// }));
+
+const corsOptions = {
+  origin: "https://dev.endriazizi.com"
+};
+
+app.use(cors(corsOptions));
+
+
 
 // // Updated CORS configuration
 // const corsOptions = {
