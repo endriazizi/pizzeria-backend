@@ -116,5 +116,7 @@ console.log(`💾 Connessione al DB riuscita! Host: ${process.env.DB_HOST}, User
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => {
   logger.info(`🚀 Server running on port ${PORT}`);
+  logger.info(`Allowed origins: ${allowedOrigins.join(', ')}`);
   console.log(`Server running on port ${PORT}`);
+  console.log(`Allowed origins: ${allowedOrigins.join(', ')}`);
 });
