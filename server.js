@@ -71,7 +71,7 @@ app.use('/api/v1/reservations', reservationsRoutes);
 // Health check endpoint
 app.get('/api/v1/health', (req, res) => {
   res.json({
-    status: 'ok',
+    status: 'ok CIAO MUNDO',
     timestamp: new Date(),
     message: `Server is alive 🚀 ${process.env.VERSIONE || '0.01'}`
   });
