@@ -22,7 +22,7 @@ const allowedOrigins = [
   'http://localhost:8101',
   'http://dev.endriazizi.com',
   'https://dev.endriazizi.com',
-  'https://demo.endriazizi.com',
+  'http://demo.endriazizi.com',
   'https://demo.endriazizi.com'
 ];
 
