@@ -15,9 +15,7 @@ const authRoutes = require('./routes/auth');
 const app = express();
 
 const allowedOrigins = [
-
   'http://127.0.0.1:8100',
-  'http://localhost:8101',
   'http://localhost:8100',
   'http://localhost:8101',
   'http://dev.endriazizi.com',
@@ -26,16 +24,22 @@ const allowedOrigins = [
   'https://demo.endriazizi.com'
 ];
 
-app.use(cors({
-  origin: (origin, callback) => {
-    if (!origin || allowedOrigins.includes(origin)) {
-      callback(null, true);
-    } else {
-      callback(new Error('Not allowed by CORS'));
-    }
-  },
-  credentials: true
-}));
+app.use((req, res, next) => {
+  const origin = req.headers.origin;
+  if (allowedOrigins.includes(origin)) {
+    res.header('Access-Control-Allow-Origin', origin); // header dinamico
+    res.header('Access-Control-Allow-Credentials', 'true');
+    res.header('Access-Control-Allow-Methods', 'GET,POST,PUT,DELETE,OPTIONS');
+    res.header('Access-Control-Allow-Headers', 'Origin,X-Requested-With,Content-Type,Accept,Authorization');
+  }
+
+  // Risposta rapida per preflight OPTIONS
+  if (req.method === 'OPTIONS') {
+    return res.sendStatus(204);
+  }
+
+  next();
+});
 
 app.use(express.json());
 
