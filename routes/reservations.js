@@ -1,8 +1,8 @@
 const express = require('express');
 const router = express.Router();
-
 const reservationsController = require('../controllers/reservationsController');
 
+// CRUD routes
 router.get('/', reservationsController.getAll);
 router.get('/:id', reservationsController.getById);
 router.post('/', reservationsController.create);

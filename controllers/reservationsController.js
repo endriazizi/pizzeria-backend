@@ -1,51 +1,52 @@
-const db = require('../config/db');
+const reservationsService = require('../services/reservationsService.js');
+const logger = require('../utils/logger');
 
 exports.getAll = async (req, res, next) => {
     try {
-        const [rows] = await db.execute(`
-      SELECT r.*, rm.name as room_name, rm.seats
-      FROM reservations r
-      JOIN rooms rm ON r.room_id = rm.id
-      ORDER BY r.date_reservation, r.time_reservation
-    `);
-        res.json(rows);
-    } catch (err) { next(err); }
+        const reservations = await reservationsService.getAll();
+        res.json(reservations);
+    } catch (err) {
+        logger.error(`❌ getAll Reservations Error: ${err.message}`);
+        next(err);
+    }
 };
 
 exports.getById = async (req, res, next) => {
     try {
-        const [rows] = await db.execute('SELECT * FROM reservations WHERE id=?', [req.params.id]);
-        res.json(rows[0] || null);
-    } catch (err) { next(err); }
+        const reservation = await reservationsService.getById(req.params.id);
+        res.json(reservation || null);
+    } catch (err) {
+        logger.error(`❌ getById Reservations Error: ${err.message}`);
+        next(err);
+    }
 };
 
 exports.create = async (req, res, next) => {
     try {
-        const { room_id, user_name, phone, date_reservation, time_reservation, occasion, intolerances } = req.body;
-        const [result] = await db.execute(`
-      INSERT INTO reservations
-      (room_id, user_name, phone, date_reservation, time_reservation, occasion, intolerances)
-      VALUES (?, ?, ?, ?, ?, ?, ?)
-    `, [room_id, user_name, phone, date_reservation, time_reservation, occasion, intolerances]);
-        res.json({ reservation_id: result.insertId });
-    } catch (err) { next(err); }
+        const reservationId = await reservationsService.create(req.body);
+        res.json({ reservation_id: reservationId });
+    } catch (err) {
+        logger.error(`❌ create Reservation Error: ${err.message}`);
+        next(err);
+    }
 };
 
 exports.update = async (req, res, next) => {
     try {
-        const { room_id, user_name, phone, date_reservation, time_reservation, occasion, intolerances, status } = req.body;
-        await db.execute(`
-      UPDATE reservations
-      SET room_id=?, user_name=?, phone=?, date_reservation=?, time_reservation=?, occasion=?, intolerances=?, status=?
-      WHERE id=?
-    `, [room_id, user_name, phone, date_reservation, time_reservation, occasion, intolerances, status, req.params.id]);
+        await reservationsService.update(req.params.id, req.body);
         res.json({ message: 'Reservation updated' });
-    } catch (err) { next(err); }
+    } catch (err) {
+        logger.error(`❌ update Reservation Error: ${err.message}`);
+        next(err);
+    }
 };
 
 exports.delete = async (req, res, next) => {
     try {
-        await db.execute('DELETE FROM reservations WHERE id=?', [req.params.id]);
+        await reservationsService.delete(req.params.id);
         res.json({ message: 'Reservation deleted' });
-    } catch (err) { next(err); }
+    } catch (err) {
+        logger.error(`❌ delete Reservation Error: ${err.message}`);
+        next(err);
+    }
 };
