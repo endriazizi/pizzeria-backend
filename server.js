@@ -27,22 +27,25 @@ const allowedOrigins = [
   'https://demo.endriazizi.com'
 ];
 
-app.use((req, res, next) => {
-  const origin = req.headers.origin;
-  if (allowedOrigins.includes(origin)) {
-    res.header('Access-Control-Allow-Origin', origin); // header dinamico
-    res.header('Access-Control-Allow-Credentials', 'true');
-    res.header('Access-Control-Allow-Methods', 'GET,POST,PUT,DELETE,OPTIONS');
-    res.header('Access-Control-Allow-Headers', 'Origin,X-Requested-With,Content-Type,Accept,Authorization');
-  }
+// CORS configuration
 
-  // Risposta rapida per preflight OPTIONS
-  if (req.method === 'OPTIONS') {
-    return res.sendStatus(204);
-  }
+app.use(cors({
+  origin: function (origin, callback) {
+    // allow server-to-server requests (no origin)
+    if (!origin) return callback(null, true);
 
-  next();
-});
+    if (allowedOrigins.indexOf(origin) === -1) {
+      return callback(new Error(`CORS policy: ${origin} not allowed`), false);
+    }
+    return callback(null, true);
+  },
+  credentials: true,
+  methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
+  allowedHeaders: ['Origin', 'X-Requested-With', 'Content-Type', 'Accept', 'Authorization']
+}));
+
+// Handle preflight OPTIONS
+app.options('*', cors());
 
 app.use(express.json());
 
