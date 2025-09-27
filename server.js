@@ -121,6 +121,8 @@ app.post("/api/v1/print-reservations", async (req, res) => {
 
       printer.alignLeft();
       printer.println(`Nome: ${resv.user_nome}`);
+      printer.println(`Cognome: ${resv.user_nome}`);
+      printer.println(`#persone: ${resv.numero_persone}`);
       printer.println(`Telefono: ${resv.phone}`);
       printer.println(
         `Data: ${new Date(resv.date_reservation).toLocaleDateString("it-IT", {

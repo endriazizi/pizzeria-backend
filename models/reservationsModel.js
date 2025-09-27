@@ -23,13 +23,13 @@ exports.fetchById = async (id) => {
 };
 
 exports.insert = async (data) => {
-  const { room_id, user_nome, user_cognome, phone, date_reservation, time_reservation, occasion, intolerances, status } = data;
+  const { room_id, user_nome, user_cognome, numero_persone, phone, date_reservation, time_reservation, occasion, intolerances, status } = data;
   const sql = `
     INSERT INTO reservations
-    (room_id, user_nome, user_cognome,phone, date_reservation, time_reservation, occasion, intolerances, status)
-    VALUES (?, ?,?, ?, ?, ?, ?, ?, ?)
+    (room_id, user_nome, user_cognome,phone, numero_persone, date_reservation, time_reservation, occasion, intolerances, status)
+    VALUES (?, ?,?, ?, ?, ?, ?, ?, ?,?)
   `;
-  const params = [room_id, user_nome, user_cognome, phone, date_reservation, time_reservation, occasion, intolerances, status || 'pending'];
+  const params = [room_id, user_nome, user_cognome, numero_persone, phone, date_reservation, time_reservation, occasion, intolerances, status || 'pending'];
   logger.info(`📋 SQL insert: ${sql} | Params: ${JSON.stringify(params)}`);
   const [result] = await db.execute(sql, params);
   logger.info(`✅ insert completed, insertedId: ${result.insertId}`);
@@ -40,10 +40,10 @@ exports.update = async (id, data) => {
   const { room_id, user_nome, phone, date_reservation, time_reservation, occasion, intolerances, status } = data;
   const sql = `
     UPDATE reservations
-    SET room_id=?, user_nome=?, user_cognome=?,phone=?, date_reservation=?, time_reservation=?, occasion=?, intolerances=?, status=?
+    SET room_id=?, user_nome=?, user_cognome=?, numero_persone=?,phone=?, date_reservation=?, time_reservation=?, occasion=?, intolerances=?, status=?
     WHERE id=?
   `;
-  const params = [room_id, user_nome, user_cognome, phone, date_reservation, time_reservation, occasion, intolerances, status, id];
+  const params = [room_id, user_nome, user_cognome, numero_persone, phone, date_reservation, time_reservation, occasion, intolerances, status, id];
   logger.info(`📋 SQL update: ${sql} | Params: ${JSON.stringify(params)}`);
   const [result] = await db.execute(sql, params);
   logger.info(`✅ update completed, affectedRows: ${result.affectedRows}`);
