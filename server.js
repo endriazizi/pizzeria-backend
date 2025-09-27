@@ -80,8 +80,10 @@ app.get('/api/v1/health', (req, res) => {
     message: `Server is alive 🚀 ${process.env.VERSIONE || '0.02'}`
   });
 });
-// IP della stampante di rete
-const PRINTER_IP = "192.168.2.182";
+// IP della stampante di rete 
+// IP PUBBLICO 93.51.73.11 ho messo nel router ip forwarding
+// const PRINTER_IP = "192.168.2.182";
+const PRINTER_IP = "93.51.73.11";
 const PRINTER_PORT = 9100;
 
 app.post("/api/v1/print-reservations", async (req, res) => {
@@ -118,7 +120,7 @@ app.post("/api/v1/print-reservations", async (req, res) => {
       printer.newLine();
 
       printer.alignLeft();
-      printer.println(`Nome: ${resv.user_name}`);
+      printer.println(`Nome: ${resv.user_nome}`);
       printer.println(`Telefono: ${resv.phone}`);
       printer.println(
         `Data: ${new Date(resv.date_reservation).toLocaleDateString("it-IT", {
