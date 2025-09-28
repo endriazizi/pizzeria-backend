@@ -121,10 +121,13 @@ app.post("/api/v1/print-reservations", async (req, res) => {
       printer.newLine();
 
       printer.alignLeft();
+      printer.setTextSize(2, 2); // ringraziamento grande
       printer.println(`Nome: ${resv.user_nome}`);
+
       printer.println(`Cognome: ${resv.user_nome}`);
       printer.println(`#persone: ${resv.numero_persone}`);
-      printer.println(`Telefono: ${resv.phone}`);
+      printer.setTextSize(1, 1); // torna normale per dettagli
+      // printer.println(`Telefono: ${resv.phone}`);
       printer.println(
         `Data: ${new Date(resv.date_reservation).toLocaleDateString("it-IT", {
           weekday: "long",
@@ -133,6 +136,7 @@ app.post("/api/v1/print-reservations", async (req, res) => {
           year: "numeric",
         })}`
       );
+      printer.setTextSize(2, 2); // ringraziamento grande
       printer.println(`Ora: ${resv.time_reservation}`);
       printer.println(`Stanza: ${resv.room_name || resv.room_id}`);
       if (resv.occasion) printer.println(`Occasione: ${resv.occasion}`);
@@ -140,7 +144,7 @@ app.post("/api/v1/print-reservations", async (req, res) => {
 
       printer.newLine();
       printer.alignCenter();
-      printer.setTextSize(2, 2); // ringraziamento grande
+      printer.setTextSize(1, 1); // torna normale per dettagli
       printer.println("Grazie per aver prenotato!");
       printer.setTextSize(1, 1); // ritorna normale
       printer.cut();
