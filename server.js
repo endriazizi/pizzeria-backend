@@ -19,6 +19,7 @@ const app = express();
 
 const allowedOrigins = [
   'http://127.0.0.1:8100',
+  'http://93.51.73.11:8100',
   'http://localhost:8100',
   'http://localhost:8101',
   'http://dev.endriazizi.com',
